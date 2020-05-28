@@ -1,10 +1,13 @@
 .bgimg-landing{
-	  position: relative;
-  opacity: 0.75;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-	position: relative;
-	background-image: url("images/landing.jpg");
+	background-position: center; /* Centers the image */
+	background-repeat: no-repeat; /* Does repeat the image */
+	background-size: cover;  /*Resize the background image to cover the entire container  */
+	background-attachment: fixed;  /*does not scroll with page*/
+	position: relative; /**/
+	background-image: url("images/landing2.jpg");
+	min-height: 100%;
+}
+
+img-text{
+	
 }
