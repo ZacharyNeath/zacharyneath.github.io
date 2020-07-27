@@ -4,6 +4,10 @@ html, body {
 	font: 400 15px/1.8 "Lato", sans-serif;
 }
 
+body {
+	transition: background-color .5s;
+}
+
 html{
 	scroll-behaviour: smooth;
 	background-color:#282E34;
@@ -15,6 +19,52 @@ h3 {
   font: 20px "Lato", sans-serif;
   color: #111;
 }
+
+.button{
+	color: white; 
+	position: fixed;
+	top: 0;
+	left: 10px;
+	font-size:50px;
+	cursor:pointer;
+	z-index: 1;
+}
+
+/*code taken from W3 Schools training for a side nav*/
+.sideNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sideNav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sideNav a:hover {
+  color: #f1f1f1;
+}
+
+.sideNav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/*end of used code*/
 
 .bgimg-landing, .bgimg-skills, .bgimg-education, .bgimg-projects, .contact{
 	background-position: center; /* Centers the image */

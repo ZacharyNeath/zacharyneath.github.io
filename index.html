@@ -7,10 +7,34 @@
 <meta name="author" content="Zacahry Neath">
 <meta name="description" content="A website about myself and what I've been doing.">
 <link rel="stylesheet" href="main.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173714426-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-173714426-1');
+</script>
+
 </head>
 
 <body>
-<div class="bgimg-landing">
+
+<span class="button" onclick="openNav()">&#9776;</span>
+<div id="mySidenav" class="sideNav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#home" onclick="closeNav()">Home</a>
+  <a href="#about" onclick="closeNav()">About</a>
+  <a href="#skills" onclick="closeNav()">Skills</a>
+  <a href="#projects" onclick="closeNav()">Projects</a>
+  <a href="#education" onclick="closeNav()">Education</a>
+  <a href="#contact" onclick="closeNav()">Contact</a>
+</div>
+<script src = "nav.js"></script>
+
+<div id="home" class="bgimg-landing">
 	<div class="column">
 	</div>
 	<div class="column">
@@ -28,14 +52,14 @@
 	</div>
 </div>
 
-<div class="seperator">
+<div id="about" class="seperator">
 	<h3 style = "text-align: center">About Me</h3>
 	<p>I am a driven third year Computer Science student currently working towards my degree at Carleton University and searching for a Co-op job for Fall 2020. 
 	Some of my interests include Game Development, Application Development, Front End Development, and Machine Learning. Some of my hobbies include creative writing,
 	cooking, and playing board games.</p>
 </div>
 
-<div class="bgimg-skills">
+<div id="skills" class="bgimg-skills">
 	<div class="tag">
 		<span class="border">Skills</span>
 	</div>
@@ -82,7 +106,7 @@
 	</div>
 </div>
 
-<div class="bgimg-projects">
+<div id="projects" class="bgimg-projects">
 	<div class="tag">
 		<span class="border">Projects and Work Experience</span>
 	</div>
@@ -141,7 +165,7 @@
 	<div class="clear"></div>
 </section>
 
-<div class="bgimg-education">
+<div id="education" class="bgimg-education">
 	<div class="tag">
 		<span class="border">Education</span>
 	</div>
@@ -168,7 +192,7 @@
 	</div>
 </div>
 
-<div class="contact">
+<div id="contact" class="contact">
 	<div class="tag">
 		<span class="border">Contact</span>
 	</div>
